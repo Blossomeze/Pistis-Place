@@ -34,7 +34,7 @@ export default function Sermon() {
             <div className="inline-block bg-white/20 px-3 max-w-fit py-1 rounded-full text-white/80 text-sm mb-4">Featured</div>
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">The Power of Faith in Uncertain Times</h3>
             <p className="text-white/80 mb-6">
-              Pastor Japheth Joseph shares powerful insights on maintaining strong faith during life's most challenging
+              Pastor Japheth Joseph shares powerful insights on maintaining strong faith during life&apos;s most challenging
               seasons. Learn how to stand firm when everything around you seems uncertain.
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
@@ -128,7 +128,7 @@ export default function Sermon() {
               </div>
             </div>
             <div className="p-5">
-              <h3 className="text-xl font-bold text-white mb-2">Overcoming Life's Challenges</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Overcoming Life&apos;s Challenges</h3>
               <p className="text-white/80 text-sm mb-4 line-clamp-2">
                 Biblical strategies for facing and conquering the obstacles in your path.
               </p>

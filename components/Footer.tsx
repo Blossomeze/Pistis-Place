@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import type { Variant } from "framer-motion"
 
 import { motion } from "framer-motion"
 import { Instagram, Twitter, Youtube, Linkedin } from "lucide-react"
@@ -39,29 +40,6 @@ export default function Footer() {
       viewport={{ once: true, amount: 0.1 }}
       variants={staggerContainer}
     >
-      {/* Newsletter Section */}
-      {/* <motion.div variants={fadeInUp} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="bg-zinc-900/60 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto backdrop-blur-sm border border-white/10">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">JOIN OUR MAILING LIST</h2>
-          <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto mb-8">
-          We're committed to delivering insightful and inspiring content from The Pistis Place, without overwhelming your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder="Email address"
-              className="flex-1 px-6 py-3.5 rounded-full bg-white/10 text-white placeholder:text-white/50 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30 transition-all"
-            />
-            <button
-              type="submit"
-              className="px-8 py-3.5 bg-white text-[#660066] font-bold rounded-full hover:bg-white/90 transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              SUBMIT
-            </button>
-          </div>
-        </div>
-      </motion.div> */}
-
       {/* Main Footer Content */}
       <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -163,7 +141,10 @@ export default function Footer() {
 interface FooterLinkColumnProps {
   title: string
   links: Array<{ label: string; href: string }>
-  variants: any  // Using any for Framer Motion variants, but you could create a more specific type
+  variants: {
+    hidden: Variant
+    show: Variant
+  }
 }
 
 function FooterLinkColumn({ title, links, variants }: FooterLinkColumnProps) {
@@ -171,7 +152,7 @@ function FooterLinkColumn({ title, links, variants }: FooterLinkColumnProps) {
     <motion.div variants={variants} className="space-y-4">
       <h3 className="text-base font-bold tracking-wide">{title}</h3>
       <ul className="space-y-3">
-        {links.map((link: { label: string; href: string }, index: number) => (
+        {links.map((link, index) => (
           <li key={index}>
             <Link
               href={link.href}

@@ -86,7 +86,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
               The Pistis Place is a vibrant community of believers committed to sound doctrine and the demonstration of
-              the Holy Spirit's power.
+              the Holy Spirit&apos;s power.
             </p>
           </div>
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-white/80 mb-6">
                 The Pistis Place was founded in 2010 by Pastor Japheth Joseph with a vision to create a church that
-                would be firmly rooted in God's Word while embracing the full power and gifts of the Holy Spirit.
+                would be firmly rooted in God&apos;s Word while embracing the full power and gifts of the Holy Spirit.
               </p>
               <p className="text-white/80 mb-6">
                 Starting with just a small group of dedicated believers meeting in a living room, our church has grown
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 lives.
               </p>
               <p className="text-white/80">
-                The name "Pistis" comes from the Greek word for faith, reflecting our commitment to building strong
+                The name &quot;Pistis&quot; comes from the Greek word for faith, reflecting our commitment to building strong
                 faith in every believer through sound biblical teaching and spiritual empowerment.
               </p>
             </div>
@@ -145,15 +145,15 @@ export default function AboutPage() {
               <div className="bg-[#141414] rounded-xl p-6 mb-6">
                 <h3 className="text-xl font-bold text-white mb-3">Our Mission</h3>
                 <p className="text-white/80">
-                  To raise disciples who are firmly rooted in God's Word and equipped to impact their world through the
-                  demonstration of the Holy Spirit's power.
+                  To raise disciples who are firmly rooted in God&apos;s Word and equipped to impact their world through the
+                  demonstration of the Holy Spirit&apos;s power.
                 </p>
               </div>
 
               <div className="bg-[#141414] rounded-xl p-6">
                 <h3 className="text-xl font-bold text-white mb-3">Our Vision</h3>
                 <p className="text-white/80">
-                  To create an environment where people from all walks of life can encounter God's presence, experience
+                  To create an environment where people from all walks of life can encounter God&apos;s presence, experience
                   authentic community, and discover their divine purpose.
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-white mb-3">Generous Living</h3>
                 <p className="text-white/80">
                   We believe in living generously with our time, talents, and resources to bless others and advance
-                  God's kingdom.
+                  God&apos;s kingdom.
                 </p>
               </div>
 
@@ -361,7 +361,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Global Impact</h3>
                 <p className="text-white/80">
-                  We believe in extending God's love beyond our walls to reach our community and the nations with the
+                  We believe in extending God&apos;s love beyond our walls to reach our community and the nations with the
                   gospel.
                 </p>
               </div>
@@ -529,7 +529,7 @@ export default function AboutPage() {
                 Community <span className="font-serif italic font-normal text-white/60">Impact</span>
               </h2>
               <p className="text-white/80 max-w-2xl mx-auto">
-                We're committed to making a tangible difference in our community and beyond.
+                We&apos;re committed to making a tangible difference in our community and beyond.
               </p>
             </div>
 
@@ -651,7 +651,7 @@ export default function AboutPage() {
               Join Our <span className="font-serif italic font-normal text-white/60">Community</span>
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-              We'd love to welcome you to The Pistis Place. Join us for a service, connect with our community, and
+              We&apos;d love to welcome you to The Pistis Place. Join us for a service, connect with our community, and
               discover your purpose.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

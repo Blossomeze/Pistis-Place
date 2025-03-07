@@ -36,7 +36,7 @@ const faqData = {
         id: "first-time",
         question: "What should I expect on my first visit?",
         answer:
-          "You'll be warmly welcomed by our greeting team who will help you find your way around. Our services include contemporary worship, prayer, and relevant biblical teaching. We recommend arriving 10-15 minutes early to get settled.",
+          "You&apos;ll be warmly welcomed by our greeting team who will help you find your way around. Our services include contemporary worship, prayer, and relevant biblical teaching. We recommend arriving 10-15 minutes early to get settled.",
       },
       {
         id: "dress-code",
@@ -48,7 +48,7 @@ const faqData = {
         id: "children",
         question: "Do you have programs for children?",
         answer:
-          "Yes! We have age-appropriate programs for children from nursery through high school. All our children's ministry workers undergo background checks and are trained in child safety protocols.",
+          "Yes! We have age-appropriate programs for children from nursery through high school. All our children&apos;s ministry workers undergo background checks and are trained in child safety protocols.",
       },
     ],
   },
@@ -59,7 +59,7 @@ const faqData = {
         id: "membership",
         question: "How do I become a member?",
         answer:
-          "Our membership process begins with attending our 'Welcome to The Pistis Place' class, held monthly. This is followed by a four-week membership class where you'll learn about our beliefs, values, and opportunities for involvement.",
+          "Our membership process begins with attending our &apos;Welcome to The Pistis Place&apos; class, held monthly. This is followed by a four-week membership class where you&apos;ll learn about our beliefs, values, and opportunities for involvement.",
       },
       {
         id: "small-groups",
@@ -152,7 +152,7 @@ export default function FAQPage() {
               Your Questions <span className="font-serif italic font-normal text-white/60">Answered</span>
             </h1>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Find answers to commonly asked questions about The Pistis Place. If you need additional information, don't
+              Find answers to commonly asked questions about The Pistis Place. If you need additional information, don&apos;t
               hesitate to contact us.
             </p>
           </div>
@@ -202,7 +202,7 @@ export default function FAQPage() {
           <div className="bg-[#141414] rounded-xl p-8 md:p-12 max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-6">Still Have Questions?</h2>
             <p className="text-white/80 text-center mb-8">
-              Can't find what you're looking for? We're here to help! Reach out to us through any of these channels.
+              Can&apos;t find what you&apos;re looking for? We&apos;re here to help! Reach out to us through any of these channels.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link

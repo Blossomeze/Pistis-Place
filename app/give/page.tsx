@@ -32,8 +32,8 @@ export default function GivePage() {
           {/* Scripture quote */}
           <div className="bg-[#141414] rounded-xl p-8 mb-16 text-center max-w-3xl mx-auto">
             <p className="text-white/80 text-lg italic mb-4">
-              "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion,
-              for God loves a cheerful giver."
+              &quot;Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion,
+              for God loves a cheerful giver.&quot;
             </p>
             <p className="text-white/60">2 Corinthians 9:7</p>
           </div>
