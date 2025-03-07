@@ -23,7 +23,7 @@ export default function ContactPage() {
               Contact <span className="font-serif italic font-normal text-white/60">Us</span>
             </h1>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              We'd love to hear from you. Reach out with any questions, prayer requests, or to learn more about our
+              We&apos;d love to hear from you. Reach out with any questions, prayer requests, or to learn more about our
               church.
             </p>
           </div>

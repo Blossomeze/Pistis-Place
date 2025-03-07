@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
 
@@ -31,8 +32,9 @@ export default function Hero() {
       >
         {/* Replace with your actual video sources */}
         <source src="/church-worship.mp4" type="video/mp4" />
-        {/* Fallback image if video doesn't load */}
-        <img
+        {/* Fallback image if video doesn&apos;t load */}
+        <Image
+          fill
           src="/placeholder.svg?height=1080&width=1920"
           alt="Church worship"
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -58,11 +60,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
-            Experience God's <span className="font-serif italic font-normal text-white/80">Presence</span>
+            Experience God&apos;s <span className="font-serif italic font-normal text-white/80">Presence</span>
           </h1>
 
           <p className="text-lg md:text-2xl text-white/60 mb-5 max-w-2xl mx-auto">
-            Join us for a life-changing encounter with God's word and worship
+            Join us for a life-changing encounter with God&apos;s word and worship
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

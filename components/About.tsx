@@ -32,12 +32,12 @@ export default function About() {
             <p className="text-white/80 mb-6">
               Founded in 2010, The Pistis Place is a vibrant community of
               believers committed to sound doctrine and the demonstration of the
-              Holy Spirit's power. Our mission is to raise disciples who are
-              firmly rooted in God's Word and equipped to impact their world.
+              Holy Spirit&apos;s power. Our mission is to raise disciples who are
+              firmly rooted in God&apos;s Word and equipped to impact their world.
             </p>
             <p className="text-white/80 mb-8">
               We believe in creating an environment where people from all walks
-              of life can encounter God's presence, experience authentic
+              of life can encounter God&apos;s presence, experience authentic
               community, and discover their divine purpose.
             </p>
             <Link
@@ -51,7 +51,7 @@ export default function About() {
           <div className="order-1 md:order-2">
             <div className="relative h-[400px] rounded-3xl overflow-hidden">
               <Image
-                src="/hero.webp"
+                src="/p8.jpeg"
                 alt="Church building"
                 fill
                 className="object-cover"

@@ -56,7 +56,7 @@ export default function Ministries() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Children's Ministry</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Children&apos;s Ministry</h3>
               <p className="text-white/80 mb-4">
                 Creating an atmosphere of worship through music, arts, and creative expression.
               </p>
@@ -82,7 +82,7 @@ export default function Ministries() {
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Intercessory Unit</h3>
               <p className="text-white/80 mb-4">
-                Extending God's love to our community through service, support, and evangelism.
+                Extending God&apos;s love to our community through service, support, and evangelism.
               </p>
               <Link
                 href="#"
@@ -93,16 +93,6 @@ export default function Ministries() {
               </Link>
             </div>
           </div>
-        </div>
-
-        {/* View all ministries button */}
-        <div className="flex justify-center">
-          <Link
-            href="#"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#141414] hover:bg-[#292b2b] transition-colors"
-          >
-            <span className="text-white/90">Explore All Ministries</span>
-          </Link>
         </div>
       </div>
     </div>

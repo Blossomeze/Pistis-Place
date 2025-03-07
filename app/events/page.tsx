@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, ChevronLeft, ChevronRight, Clock, MapPin } from "lucide-react"
+import ContactSection from "@/components/Contact"
 
 // Sample events data
 const events = [
@@ -112,7 +113,7 @@ export default function EventsPage() {
         <div
           className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, rgba(102,0,102,0.8) 0%, rgba(0,0,0,0) 70%)",
+            background: "radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%)",
           }}
         ></div>
 
@@ -130,7 +131,7 @@ export default function EventsPage() {
           {events.filter((event) => event.featured)[0] && (
             <div className="mb-16">
               <h2 className="text-2xl font-bold text-white mb-6">Featured Event</h2>
-              <div className="grid md:grid-cols-2 gap-8 bg-[#141414] rounded-xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-5 bg-[#141414] rounded-xl overflow-hidden">
                 <div className="relative h-[300px] md:h-auto">
                   <Image
                     src={events.filter((event) => event.featured)[0].image || "/placeholder.svg"}
@@ -140,7 +141,7 @@ export default function EventsPage() {
                   />
                 </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
-                  <div className="inline-block bg-[#660066]/20 px-3 py-1 rounded-full text-white/80 text-sm mb-4">
+                  <div className="inline-block bg-white/20 max-w-fit px-3 py-1 rounded-full text-white/80 text-sm mb-4">
                     Featured
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
@@ -166,7 +167,7 @@ export default function EventsPage() {
                   </div>
                   <Link
                     href={`/events/${events.filter((event) => event.featured)[0].id}`}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full sm:w-auto"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full sm:w-auto"
                   >
                     <Calendar className="w-5 h-5 text-white/70" />
                     <span className="text-white/90">Add to Calendar</span>
@@ -186,7 +187,7 @@ export default function EventsPage() {
                     setActiveMonth(months[currentIndex - 1])
                   }
                 }}
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#660066]/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"
                 disabled={months.indexOf(activeMonth) === 0}
               >
                 <ChevronLeft className="w-5 h-5 text-white/70" />
@@ -199,7 +200,7 @@ export default function EventsPage() {
                     setActiveMonth(months[currentIndex + 1])
                   }
                 }}
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#660066]/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"
                 disabled={months.indexOf(activeMonth) === months.length - 1}
               >
                 <ChevronRight className="w-5 h-5 text-white/70" />
@@ -209,7 +210,7 @@ export default function EventsPage() {
               <button
                 onClick={() => setViewType("list")}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  viewType === "list" ? "bg-[#660066]/30 text-white" : "text-white/70 hover:text-white"
+                  viewType === "list" ? "bg-white/30 text-white" : "text-white/70 hover:text-white"
                 }`}
               >
                 List View
@@ -217,7 +218,7 @@ export default function EventsPage() {
               <button
                 onClick={() => setViewType("calendar")}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  viewType === "calendar" ? "bg-[#660066]/30 text-white" : "text-white/70 hover:text-white"
+                  viewType === "calendar" ? "bg-white/30 text-white" : "text-white/70 hover:text-white"
                 }`}
               >
                 Calendar View
@@ -232,7 +233,7 @@ export default function EventsPage() {
                 <div key={event.id} className="bg-[#141414] rounded-xl overflow-hidden">
                   <div className="relative h-[200px]">
                     <Image src={event.image || "/placeholder.svg"} alt={event.title} fill className="object-cover" />
-                    <div className="absolute bottom-4 left-4 bg-[#660066]/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                    <div className="absolute bottom-4 left-4 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                       <p className="text-white font-medium">{event.date}</p>
                     </div>
                   </div>
@@ -253,7 +254,7 @@ export default function EventsPage() {
                     </div>
                     <Link
                       href={`/events/${event.id}`}
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full justify-center"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full justify-center"
                     >
                       <Calendar className="w-5 h-5 text-white/70" />
                       <span className="text-white/90">Add to Calendar</span>
@@ -282,13 +283,13 @@ export default function EventsPage() {
                     <div
                       key={day}
                       className={`aspect-square rounded-lg border border-white/10 p-2 ${
-                        hasEvent ? "bg-[#660066]/10" : ""
+                        hasEvent ? "bg-white/10" : ""
                       } ${day < 5 ? "opacity-30" : ""}`}
                     >
                       <div className="text-white/80">{day}</div>
                       {hasEvent && (
                         <div className="mt-1">
-                          <div className="w-full h-1 bg-[#660066]/50 rounded-full mb-1"></div>
+                          <div className="w-full h-1 bg-white/50 rounded-full mb-1"></div>
                           <Link
                             href={`/events/${events.find((event) => event.date.includes(`May ${day}`))?.id}`}
                             className="text-xs text-white/90 hover:text-white truncate block"
@@ -312,7 +313,7 @@ export default function EventsPage() {
             </p>
             <Link
               href="/calendar-subscription"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/5 border border-white/10 hover:bg-[#660066]/20 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/5 border border-white/10 hover:bg-white/20 transition-colors"
             >
               <Calendar className="w-5 h-5 text-white/70" />
               <span className="text-white">Subscribe to Calendar</span>
@@ -320,6 +321,7 @@ export default function EventsPage() {
           </div>
         </div>
       </div>
+      <ContactSection />
     </div>
   )
 }

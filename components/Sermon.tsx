@@ -31,7 +31,7 @@ export default function Sermon() {
             </div>
           </div>
           <div className="flex flex-col justify-center">
-            <div className="inline-block bg-white/10 px-3 py-1 rounded-full text-white/80 text-sm mb-4">Featured</div>
+            <div className="inline-block bg-white/20 px-3 max-w-fit py-1 rounded-full text-white/80 text-sm mb-4">Featured</div>
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">The Power of Faith in Uncertain Times</h3>
             <p className="text-white/80 mb-6">
               Pastor Japheth Joseph shares powerful insights on maintaining strong faith during life's most challenging

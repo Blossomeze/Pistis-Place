@@ -4,6 +4,8 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Check, ChevronDown, ChevronUp, Users } from "lucide-react"
+import ContactSection from "@/components/Contact"
+
 // Sample leadership team data
 const leadershipTeam = [
   {
@@ -13,41 +15,6 @@ const leadershipTeam = [
     image: "/p8.jpeg",
     bio: "Pastor Japheth Joseph is a devoted shepherd and teacher committed to raising believers grounded in sound doctrine, demonstrating the power of the Holy Ghost whilst maintaining a high level of conviction.",
     featured: true,
-  },
-  {
-    id: 2,
-    name: "Sarah Williams",
-    role: "Associate Pastor - Family Ministry",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Leading our family ministry with wisdom and compassion, Pastor Sarah helps families build strong spiritual foundations.",
-  },
-  {
-    id: 3,
-    name: "Michael Thomas",
-    role: "Associate Pastor - Youth Ministry",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "With a heart for the next generation, Pastor Michael leads our youth with energy and biblical wisdom.",
-  },
-  {
-    id: 4,
-    name: "Rebecca Johnson",
-    role: "Associate Pastor - Worship",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Leading our congregation in authentic worship, Pastor Rebecca helps create an atmosphere where God's presence is experienced.",
-  },
-  {
-    id: 5,
-    name: "David Wilson",
-    role: "Associate Pastor - Teaching",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "With a gift for making scripture accessible, Pastor David leads our teaching ministry with depth and clarity.",
-  },
-  {
-    id: 6,
-    name: "Jennifer Martinez",
-    role: "Associate Pastor - Outreach",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Passionate about community impact, Pastor Jennifer leads our efforts to serve and reach our city with God's love.",
   },
 ]
 
@@ -102,14 +69,13 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-black">
-
       {/* Hero section */}
       <div className="relative pt-32 pb-20 px-4 md:px-8 lg:px-16">
         {/* Background gradient */}
         <div
           className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, rgba(102,0,102,0.8) 0%, rgba(0,0,0,0) 70%)",
+            background: "radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%)",
           }}
         ></div>
 
@@ -209,7 +175,7 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-[#141414] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-full bg-[#660066]/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-white/70"
                     viewBox="0 0 24 24"
@@ -232,7 +198,7 @@ export default function AboutPage() {
               </div>
 
               <div className="bg-[#141414] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-full bg-[#660066]/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-white/70"
                     viewBox="0 0 24 24"
@@ -270,7 +236,7 @@ export default function AboutPage() {
               </div>
 
               <div className="bg-[#141414] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-full bg-[#660066]/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-white/70" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Authentic Community</h3>
@@ -281,7 +247,7 @@ export default function AboutPage() {
               </div>
 
               <div className="bg-[#141414] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-full bg-[#660066]/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-white/70"
                     viewBox="0 0 24 24"
@@ -311,7 +277,7 @@ export default function AboutPage() {
               </div>
 
               <div className="bg-[#141414] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-full bg-[#660066]/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-white/70"
                     viewBox="0 0 24 24"
@@ -349,7 +315,7 @@ export default function AboutPage() {
               </div>
 
               <div className="bg-[#141414] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-full bg-[#660066]/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-white/70"
                     viewBox="0 0 24 24"
@@ -461,7 +427,7 @@ export default function AboutPage() {
             {/* Featured leader */}
             {leadershipTeam.filter((leader) => leader.featured)[0] && (
               <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="relative rounded-3xl h-[500px] overflow-hidden aspect-[2/3] md:aspect-auto">
+                <div className="relative w-full rounded-3xl h-[500px] overflow-hidden aspect-[2/3] md:aspect-auto">
                   <Image
                     src={leadershipTeam.filter((leader) => leader.featured)[0].image || "/placeholder.svg"}
                     alt={leadershipTeam.filter((leader) => leader.featured)[0].name}
@@ -470,7 +436,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <div className="inline-block bg-[#660066]/20 px-3 py-1 rounded-full text-white/80 text-sm mb-4">
+                  <div className="inline-block bg-white/10 px-3 max-w-fit py-1 rounded-full text-white/80 text-sm mb-4">
                     {leadershipTeam.filter((leader) => leader.featured)[0].role}
                   </div>
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -579,15 +545,15 @@ export default function AboutPage() {
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">6,000+ meals distributed annually</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">Partnership with local food banks</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">Volunteer opportunities for church members</span>
                     </li>
                   </ul>
@@ -617,15 +583,15 @@ export default function AboutPage() {
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">100+ youth mentored annually</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">Academic and life skills support</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">Career development workshops</span>
                     </li>
                   </ul>
@@ -655,15 +621,15 @@ export default function AboutPage() {
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">5 countries served annually</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">Medical and educational support</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-[#660066]/70 mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-white/70 mt-0.5 flex-shrink-0" />
                       <span className="text-white/80">Church planting initiatives</span>
                     </li>
                   </ul>
@@ -691,13 +657,13 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/events"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/5 border border-white/10 hover:bg-[#660066]/20 transition-colors w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors w-full sm:w-auto"
               >
                 <span className="text-white">Service Times</span>
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#660066]/20 hover:bg-[#660066]/30 transition-colors w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/15 hover:bg-white/20 transition-colors w-full sm:w-auto"
               >
                 <span className="text-white">Contact Us</span>
               </Link>
@@ -705,6 +671,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      <ContactSection />
     </div>
   )
 }

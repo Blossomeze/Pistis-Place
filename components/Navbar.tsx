@@ -58,31 +58,31 @@ export default function Navbar() {
               <div className="hidden md:flex items-center space-x-8">
                 <Link
                   href="/"
-                  className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                  className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
                 >
                   Home
                 </Link>
                 <Link
                   href="/about"
-                  className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                  className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
                 >
                   About
                 </Link>
                 <Link
                   href="/sermons"
-                  className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                  className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
                 >
                   Sermons
                 </Link>
                 <Link
                   href="/events"
-                  className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                  className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
                 >
                   Events
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                  className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 rounded-lg hover:bg-white/5 transition-colors"
                 >
                   Contact
                 </Link>
@@ -91,20 +91,20 @@ export default function Navbar() {
               {/* CTA Button */}
               <div className="hidden md:block">
                 <Link
-                  href="/donate"
+                  href="/give"
                   rel="noopener"
-                  className="relative group inline-flex h-10 items-center justify-center rounded-full bg-white/5 border border-white/10 px-6 py-2 text-sm font-medium font-['Instrument_Sans'] text-white hover:bg-white/10 transition-colors"
+                  className="relative group inline-flex h-10 items-center justify-center rounded-3xl bg-white border-white/90 px-6 py-2 text-sm font-medium text-black hover:bg-white/50 transition-colors"
                 >
                   {/* Glow effect */}
                   <div
-                    className="absolute inset-0 rounded-full blur-[10px] opacity-30 group-hover:opacity-50 transition-opacity"
+                    className="absolute inset-0 rounded-xl blur-[10px] opacity-30 group-hover:opacity-50 transition-opacity"
                     style={{
                       background:
                         "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%)",
                     }}
                   ></div>
 
-                  <span>Donate</span>
+                  <span>Give</span>
                 </Link>
               </div>
 
@@ -124,46 +124,46 @@ export default function Navbar() {
                 <div className="flex flex-col space-y-4">
                   <Link
                     href="/"
-                    className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 transition-colors"
+                    className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Home
                   </Link>
                   <Link
                     href="/about"
-                    className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 transition-colors"
+                    className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     About
                   </Link>
                   <Link
                     href="/sermons"
-                    className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 transition-colors"
+                    className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sermons
                   </Link>
                   <Link
                     href="/events"
-                    className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 transition-colors"
+                    className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Events
                   </Link>
                   <Link
                     href="/contact"
-                    className="text-sm font-medium font-['Instrument_Sans'] text-white/80 hover:text-white px-3.5 py-2 transition-colors"
+                    className="text-sm font-medium text-white/80 hover:text-white px-3.5 py-2 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contact
                   </Link>
                   <Link
-                    href="/donate"
+                    href="/give"
                     rel="noopener"
-                    className="inline-flex h-10 items-center justify-center rounded-full bg-white/5 border border-white/10 px-6 py-2 text-sm font-medium font-['Instrument_Sans'] text-white hover:bg-white/10 transition-colors"
+                    className="inline-flex h-10 items-center justify-center rounded-[10px] bg-white/5 border border-white/10 px-6 py-2 text-sm font-medium text-white hover:bg-white/10 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Donate
+                    Give
                   </Link>
                 </div>
               </div>

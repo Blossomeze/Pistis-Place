@@ -163,7 +163,7 @@ export default function Footer() {
 interface FooterLinkColumnProps {
   title: string
   links: Array<{ label: string; href: string }>
-  variants: any // Using any for Framer Motion variants, but you could create a more specific type
+  variants: any  // Using any for Framer Motion variants, but you could create a more specific type
 }
 
 function FooterLinkColumn({ title, links, variants }: FooterLinkColumnProps) {

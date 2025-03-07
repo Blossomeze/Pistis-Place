@@ -7,13 +7,14 @@ import Link from "next/link"
 export default function GivePage() {
   return (
     <div className="min-h-screen bg-black">
+
       {/* Hero section */}
       <div className="relative pt-32 pb-20 px-4 md:px-8 lg:px-16">
         {/* Background gradient */}
         <div
           className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, rgba(102,0,102,0.8) 0%, rgba(0,0,0,0) 70%)",
+            background: "radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%)",
           }}
         ></div>
 
@@ -42,7 +43,7 @@ export default function GivePage() {
             {/* One-time giving */}
             <div className="bg-[#141414] p-8 rounded-3xl">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-[#660066]/20 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
                   <Heart className="w-8 h-8 text-white/70" />
                 </div>
               </div>
@@ -77,7 +78,7 @@ export default function GivePage() {
               </div>
               <Link
                 href="/give/one-time"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full"
               >
                 <span className="text-white/90">Give Now</span>
                 <ArrowRight className="w-4 h-4 text-white/70" />
@@ -87,7 +88,7 @@ export default function GivePage() {
             {/* Recurring giving */}
             <div className="bg-[#141414] p-8 rounded-3xl">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-[#660066]/20 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
                   <Repeat className="w-8 h-8 text-white/70" />
                 </div>
               </div>
@@ -122,7 +123,7 @@ export default function GivePage() {
               </div>
               <Link
                 href="/give/recurring"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full"
               >
                 <span className="text-white/90">Set Up Monthly</span>
                 <ArrowRight className="w-4 h-4 text-white/70" />
@@ -132,7 +133,7 @@ export default function GivePage() {
             {/* Mobile/Online giving */}
             <div className="bg-[#141414] p-8 rounded-3xl">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-[#660066]/20 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
                   <CreditCard className="w-8 h-8 text-white/70" />
                 </div>
               </div>
@@ -159,7 +160,7 @@ export default function GivePage() {
               </div>
               <Link
                 href="/give/mobile"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full"
               >
                 <span className="text-white/90">Give via Mobile</span>
                 <ArrowRight className="w-4 h-4 text-white/70" />
@@ -196,7 +197,7 @@ export default function GivePage() {
                       <span className="text-white">$500,000</span>
                     </div>
                     <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#660066]/70 rounded-full" style={{ width: "35%" }}></div>
+                      <div className="h-full bg-white/70 rounded-full" style={{ width: "35%" }}></div>
                     </div>
                     <div className="flex justify-between mt-2">
                       <span className="text-white/70">Raised so far</span>
@@ -205,7 +206,7 @@ export default function GivePage() {
                   </div>
                   <Link
                     href="/give/building-fund"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full"
                   >
                     <span className="text-white/90">Contribute</span>
                     <ArrowRight className="w-4 h-4 text-white/70" />
@@ -237,7 +238,7 @@ export default function GivePage() {
                       <span className="text-white">$100,000</span>
                     </div>
                     <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#660066]/70 rounded-full" style={{ width: "62%" }}></div>
+                      <div className="h-full bg-white/70 rounded-full" style={{ width: "62%" }}></div>
                     </div>
                     <div className="flex justify-between mt-2">
                       <span className="text-white/70">Raised so far</span>
@@ -246,7 +247,7 @@ export default function GivePage() {
                   </div>
                   <Link
                     href="/give/outreach"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors w-full"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors w-full"
                   >
                     <span className="text-white/90">Contribute</span>
                     <ArrowRight className="w-4 h-4 text-white/70" />
@@ -265,7 +266,7 @@ export default function GivePage() {
             </p>
             <div className="flex justify-between items-center">
               <p className="text-white/70">Tax ID: 12-3456789</p>
-              <Link href="/tax-receipt" className="text-[#660066]/80 hover:text-[#660066] transition-colors">
+              <Link href="/tax-receipt" className="text-white/80 hover:text-white transition-colors">
                 Request Tax Receipt
               </Link>
             </div>
@@ -280,13 +281,13 @@ export default function GivePage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="mailto:giving@thepistisplace.com"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors"
               >
                 <span className="text-white/90">giving@thepistisplace.com</span>
               </Link>
               <Link
                 href="tel:+1234567890"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-[#660066]/20 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/20 transition-colors"
               >
                 <span className="text-white/90">(123) 456-7890</span>
               </Link>

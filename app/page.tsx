@@ -15,8 +15,8 @@ export default function Home() {
       <About />
       <Ministries />
       <GallerySection />
-      <EventsSection />
       <Pastor />
+      <EventsSection />
       <Sermon />
       <Give />
       <ContactSection />
