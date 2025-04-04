@@ -31,3 +31,21 @@ body {
   color: var(--foreground);
   font-family: "Poppins", sans-serif;
 }
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .animate-marquee {
+    animation: move-left 15s linear infinite;
+  }
+  
+  }
+
+  @keyframes move-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

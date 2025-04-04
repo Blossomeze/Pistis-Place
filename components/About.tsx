@@ -41,7 +41,7 @@ export default function About() {
               community, and discover their divine purpose.
             </p>
             <Link
-              href="#"
+              href="/about"
               className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors"
             >
               <span>Learn More About Our Beliefs</span>
@@ -49,7 +49,7 @@ export default function About() {
             </Link>
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative h-[400px] rounded-3xl overflow-hidden">
+            <div className="relative h-[400px] overflow-hidden">
               <Image
                 src="/p8.jpeg"
                 alt="Church building"
